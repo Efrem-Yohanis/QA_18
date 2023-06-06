@@ -1,0 +1,105 @@
+fieldset {
+    width: 40%;
+    height: inherit;
+    border-radius: 30px;
+    margin-left: 35%;
+    margin-top: 5%;
+    box-shadow: inset;
+}
+
+h1 {
+    text-align: center;
+}
+
+div.un {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+p#id1 {
+    color: rgba(253, 245, 5, 0.921);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(26, 4, 136);
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.footer {
+    background-color: #333;
+    padding: 8px;
+}
+
+.fh {
+    color: white;
+    text-align: center;
+}
+
+div.head {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+span.com {
+    display: inline-block;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding-left: 5px;
+    width: 24%;
+    height: inherit;
+    text-align: center;
+}
+
+input.data {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid blue;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid blue;
+}
+
+div.ta {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+button.btn {
+    margin: 5px;
+    width: 30%;
+    height: 40px;
+    color: white;
+    background-color: rgb(31, 139, 15);
+    border: 1px solid rgb(31, 139, 15);
+    border-radius: 10px;
+}

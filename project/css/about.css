@@ -1,0 +1,97 @@
+p#id1 {
+    color: rgba(253, 245, 5, 0.921);
+    text-align: center;
+}
+
+h1 {
+    color: rgb(26, 4, 136);
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+
+li a:hover {
+    background-color: #111;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 350px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+div.heading {
+    padding: 500;
+    margin: 100;
+}
+
+.footer {
+    background-color: #333;
+    padding: 8px;
+}
+
+.fh {
+    color: white;
+    text-align: center;
+}
+
+div.head {
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+span.com {
+    display: block;
+    border-radius: 25px;
+    border: 2px solid #73AD21;
+    padding-left: 5px;
+    margin: 10px;
+    height: inherit;
+    text-align: center;
+}
+
+table {
+    border: 1px solid;
+    border-collapse: collapse;
+}
+
+.card {
+    border-radius: 100px;
+}
