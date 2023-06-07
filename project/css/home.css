@@ -24,7 +24,7 @@ li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 15px;
     text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 350px;
+    width: 345px;
 }
 
 div.gallery:hover {

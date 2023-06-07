@@ -24,9 +24,8 @@ describe('visit_command',()=>{
 
    //5. Changing BaseUrl While Testing
     it('Changing BaseUrl While Testing',{baseUrl: 'http://127.0.0.1:5500/project/'},()=>{
-         
             cy.visit('home.html')
-        });
+    });
     
 
     
