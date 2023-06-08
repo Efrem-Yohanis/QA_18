@@ -54,10 +54,20 @@ describe('css selector',()=>{
 
     it('Chained Command',()=>{
         cy.visit('http://127.0.0.1:5500/project1/form.html')
-        cy.get('.text').find('h1')
+        cy.get('.text').find('h1').as('heading')
+
+
         cy.get('.text').contains('First Page')
         cy.contains('Registration Form')  // 
+
+        cy.get('@heading')
+        .should('have.length', 1)
     })
+
+   it.only('aliasing',()=>{
+    cy.get('@heading')
+    .should('have.length', 1)
+   })
 
     // 3. time out example
 
@@ -67,7 +77,7 @@ describe('css selector',()=>{
     })
 
     // eq() command
-    it.only('eq command',()=>{
+    it('eq command',()=>{
         cy.visit('http://127.0.0.1:5500/project1/form.html')
         cy.get('.form-control').eq(5)
     })
