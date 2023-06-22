@@ -24,8 +24,7 @@ describe('common Cypress Assertion',()=>{
 
     it('value check',()=>{
         cy.visit('http://127.0.0.1:5500/project1/form.html')
-        cy.pause()
-        cy.get('#fname').should('not.have.value','Efrem')
+        cy.get('#fname').should('have.value','Efrem').debug()
 
     })
     
