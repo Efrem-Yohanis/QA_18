@@ -6,7 +6,8 @@ describe('Test Alert',()=>{
    {
     return false;
    });
-    it('noraml Alert',()=>{
+
+    it.only('noraml Alert',()=>{
         cy.visit("http://127.0.0.1:5500/project/login.html?")
         cy.get('.btn > a').click()
         cy.on('window:alert',(myalert)=>{
@@ -28,7 +29,7 @@ describe('Test Alert',()=>{
         cy.on('window:confirm',()=>false)
         cy.get('#result').should('have.text','You canceled!')
     })
-it.only('prompt Alert',()=>{
+it('prompt Alert',()=>{
     cy.visit('http://127.0.0.1:5500/project/home.html')
     cy.window().then((win)=>{
         cy.stub(win,'prompt').returns('Efrem')
