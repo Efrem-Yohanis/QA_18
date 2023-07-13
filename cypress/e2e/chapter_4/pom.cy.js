@@ -1,3 +1,4 @@
+import Login from "../../support/PageObject/pageclass1"
 describe('hook', () => {
     Cypress.on('uncaught:exception', (err, runnable) => {
         return false
@@ -8,9 +9,13 @@ describe('hook', () => {
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
         
         //login
-        cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Admin')
-        cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type('admin123')
-        cy.get('.oxd-button').click()
+        const login = new Login()
+        login.getUsename()
+        login.getPassword()
+        login.getLoginbtn()
+        
+        cy.wait(10000)
+        cy.screenshot('this is after login')
         
         //asertion
         cy.url().should('eq',"https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index")
@@ -25,9 +30,10 @@ describe('hook', () => {
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
 
         //login
-        cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Admin')
-        cy.get(':nth-child(3) > .oxd-input-group > :nth-child(2) > .oxd-input').type('admin123')
-        cy.get('.oxd-button').click()
+        const login = new Login()
+        login.getUsename()
+        login.getPassword()
+        login.getLoginbtn()
 
         //assertion
          cy.get('.oxd-topbar-header-breadcrumb > .oxd-text').should('have.text',"Dashboard")

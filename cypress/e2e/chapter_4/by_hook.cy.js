@@ -13,7 +13,7 @@ describe('example',()=>{
         // visit
         cy.visit('https://opensource-demo.orangehrmlive.com/web/index.php/auth/login')
        // login
-       cy.mylogin(this.mydata.Username,this.mydata.Password)
+        cy.mylogin(this.mydata.Username,this.mydata.Password)
     })
     afterEach('',()=>{
         // logout

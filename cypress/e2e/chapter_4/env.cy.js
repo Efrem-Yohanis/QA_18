@@ -4,8 +4,9 @@ describe('hook', () => {
     })
     
     it.only('test 1', () => {
+  
         // visit
-        cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
+        cy.visit(Cypress.env('url3'))
         
         //login
         cy.get(':nth-child(2) > .oxd-input-group > :nth-child(2) > .oxd-input').type('Admin')
